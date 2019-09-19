@@ -46,7 +46,7 @@ before_action :admin_user, only: [:destroy]
   
   private
     def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation)
+      params.require(:user).permit(:name, :email, :department, :password, :password_confirmation)
     end
     
     # beforeフィルター
